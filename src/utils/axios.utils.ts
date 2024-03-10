@@ -1,6 +1,6 @@
 import axios, { AxiosResponse, AxiosError } from "axios";
 
-const client = axios.create({ baseURL: `https://swap-tune.vercel.app` });
+const client = axios.create({ baseURL: `https://mm-backend-lyart.vercel.app` });
 
 export const request = ({ ...options }) => {
   client.defaults.headers.common.Authorization = `Bearer ${localStorage.getItem(
